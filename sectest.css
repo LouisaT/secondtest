@@ -1,7 +1,65 @@
-div {
-    width: 300px;
-    height: 120px;
-    margin: auto;
+* {box-sizing: border-box;}
+
+body {
+    margin: 0; 
+    padding: 0; 
+    background-color: pink;
+    background-image: linear-gradient(to bottom right, rgb(236, 120, 165), pink);
+    height: 100%;}   
+
+.wrap {
+    display: flex;
+    flex-flow: row wrap;
+    width: 740px; 
+    height: auto; 
+    padding: 10px;
+    margin: 40px auto;
+    max-width: 100%;
+    background-color: wheat;
+    box-shadow: 0 0 20px rgb(236, 120, 165);
+    border-radius: 12px;
+    }
+
+.wrap>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    margin: 10px;
     background-color: bisque;
-}
-.franz {color: cyan;}
+    background-image: url('b2.png');
+    border: 1px solid rgb(244, 186, 100);
+    border-radius: 7px;
+    box-shadow: 0 0 20px rgb(243, 169, 119);
+    color: white;
+    font-family: Vivaldi;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0 0 10px white, 0 0 3px gainsboro;
+    transition: font-size 1s;
+    } 
+
+.wrap>div:hover {font-size: 60px;}     
+
+@media (max-width: 740px) {
+        .wrap {width: 560px;}
+    }
+
+@media (max-width: 560px) {
+        .wrap {width: 380px;}
+    }
+
+@media (max-width: 380px) {
+        .wrap {width: 200px;}
+    }    
+
+
+
+
+
+
+    transition: 
+
+
+
